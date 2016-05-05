@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "TestInsertData.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    TestTable *table = [[TestTable alloc] init];
+    TestRecord *record = [[TestRecord alloc] init];
+//    table 
+    
 }
 
 - (void)didReceiveMemoryWarning {

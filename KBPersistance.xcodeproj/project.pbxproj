@@ -15,6 +15,17 @@
 		4C53BCEF1CDAE3E200E1DE3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C53BCED1CDAE3E200E1DE3F /* LaunchScreen.storyboard */; };
 		4C53BCFA1CDAE3E200E1DE3F /* KBPersistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BCF91CDAE3E200E1DE3F /* KBPersistanceTests.m */; };
 		4C53BD051CDAE3E200E1DE3F /* KBPersistanceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD041CDAE3E200E1DE3F /* KBPersistanceUITests.m */; };
+		4C53BD131CDAEBEB00E1DE3F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C53BD121CDAEBEB00E1DE3F /* libsqlite3.0.tbd */; };
+		4C53BD181CDAEC5F00E1DE3F /* KBDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD171CDAEC5F00E1DE3F /* KBDataBase.m */; };
+		4C53BD1C1CDB13A700E1DE3F /* KBDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD1B1CDB13A700E1DE3F /* KBDatabasePool.m */; };
+		4C53BD211CDB21D400E1DE3F /* TestInsertData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD201CDB21D400E1DE3F /* TestInsertData.m */; };
+		4C53BD251CDB22A200E1DE3F /* KBPersistanceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD241CDB22A200E1DE3F /* KBPersistanceTable.m */; };
+		4C53BD291CDB250900E1DE3F /* KBQueryCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD281CDB250900E1DE3F /* KBQueryCommand.m */; };
+		4C53BD2D1CDB358B00E1DE3F /* KBQueryCommand+SchemaManipulations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD2C1CDB358B00E1DE3F /* KBQueryCommand+SchemaManipulations.m */; };
+		4C53BD331CDB375100E1DE3F /* NSString+SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD321CDB375100E1DE3F /* NSString+SQL.m */; };
+		4C53BD391CDB499600E1DE3F /* KBPersistanceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD381CDB499600E1DE3F /* KBPersistanceRecord.m */; };
+		4C53BD3D1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD3C1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m */; };
+		4C53BD411CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD401CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,30 @@
 		4C53BD001CDAE3E200E1DE3F /* KBPersistanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KBPersistanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C53BD041CDAE3E200E1DE3F /* KBPersistanceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBPersistanceUITests.m; sourceTree = "<group>"; };
 		4C53BD061CDAE3E200E1DE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C53BD121CDAEBEB00E1DE3F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4C53BD161CDAEC5F00E1DE3F /* KBDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDataBase.h; sourceTree = "<group>"; };
+		4C53BD171CDAEC5F00E1DE3F /* KBDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDataBase.m; sourceTree = "<group>"; };
+		4C53BD191CDAF20600E1DE3F /* KBDBConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBDBConfiguration.h; sourceTree = "<group>"; };
+		4C53BD1A1CDB13A700E1DE3F /* KBDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDatabasePool.h; sourceTree = "<group>"; };
+		4C53BD1B1CDB13A700E1DE3F /* KBDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDatabasePool.m; sourceTree = "<group>"; };
+		4C53BD1F1CDB21D400E1DE3F /* TestInsertData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInsertData.h; sourceTree = "<group>"; };
+		4C53BD201CDB21D400E1DE3F /* TestInsertData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInsertData.m; sourceTree = "<group>"; };
+		4C53BD231CDB22A200E1DE3F /* KBPersistanceTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBPersistanceTable.h; sourceTree = "<group>"; };
+		4C53BD241CDB22A200E1DE3F /* KBPersistanceTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPersistanceTable.m; sourceTree = "<group>"; };
+		4C53BD271CDB250900E1DE3F /* KBQueryCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBQueryCommand.h; sourceTree = "<group>"; };
+		4C53BD281CDB250900E1DE3F /* KBQueryCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBQueryCommand.m; sourceTree = "<group>"; };
+		4C53BD2B1CDB358B00E1DE3F /* KBQueryCommand+SchemaManipulations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KBQueryCommand+SchemaManipulations.h"; sourceTree = "<group>"; };
+		4C53BD2C1CDB358B00E1DE3F /* KBQueryCommand+SchemaManipulations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBQueryCommand+SchemaManipulations.m"; sourceTree = "<group>"; };
+		4C53BD311CDB375100E1DE3F /* NSString+SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SQL.h"; sourceTree = "<group>"; };
+		4C53BD321CDB375100E1DE3F /* NSString+SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SQL.m"; sourceTree = "<group>"; };
+		4C53BD341CDB383000E1DE3F /* KBPersistanceMarcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBPersistanceMarcos.h; sourceTree = "<group>"; };
+		4C53BD351CDB43D300E1DE3F /* KBPersistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBPersistance.h; sourceTree = "<group>"; };
+		4C53BD371CDB499600E1DE3F /* KBPersistanceRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBPersistanceRecord.h; sourceTree = "<group>"; };
+		4C53BD381CDB499600E1DE3F /* KBPersistanceRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPersistanceRecord.m; sourceTree = "<group>"; };
+		4C53BD3B1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KBPersistanceTable+Insert.h"; sourceTree = "<group>"; };
+		4C53BD3C1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBPersistanceTable+Insert.m"; sourceTree = "<group>"; };
+		4C53BD3F1CDB528200E1DE3F /* KBQueryCommand+DataManipulations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KBQueryCommand+DataManipulations.h"; sourceTree = "<group>"; };
+		4C53BD401CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBQueryCommand+DataManipulations.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C53BD131CDAEBEB00E1DE3F /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +117,7 @@
 		4C53BCD31CDAE3E200E1DE3F = {
 			isa = PBXGroup;
 			children = (
+				4C53BD121CDAEBEB00E1DE3F /* libsqlite3.0.tbd */,
 				4C53BCDE1CDAE3E200E1DE3F /* KBPersistance */,
 				4C53BCF81CDAE3E200E1DE3F /* KBPersistanceTests */,
 				4C53BD031CDAE3E200E1DE3F /* KBPersistanceUITests */,
@@ -101,6 +138,8 @@
 		4C53BCDE1CDAE3E200E1DE3F /* KBPersistance */ = {
 			isa = PBXGroup;
 			children = (
+				4C53BD1D1CDB21A300E1DE3F /* Test */,
+				4C53BD141CDAEC2D00E1DE3F /* KBPersistance */,
 				4C53BCE21CDAE3E200E1DE3F /* AppDelegate.h */,
 				4C53BCE31CDAE3E200E1DE3F /* AppDelegate.m */,
 				4C53BCE51CDAE3E200E1DE3F /* ViewController.h */,
@@ -138,6 +177,131 @@
 				4C53BD061CDAE3E200E1DE3F /* Info.plist */,
 			);
 			path = KBPersistanceUITests;
+			sourceTree = "<group>";
+		};
+		4C53BD141CDAEC2D00E1DE3F /* KBPersistance */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD361CDB495200E1DE3F /* Record */,
+				4C53BD2E1CDB372D00E1DE3F /* Categories */,
+				4C53BD261CDB24D300E1DE3F /* QueryCommand */,
+				4C53BD221CDB221D00E1DE3F /* Table */,
+				4C53BD151CDAEC2D00E1DE3F /* Database */,
+				4C53BD191CDAF20600E1DE3F /* KBDBConfiguration.h */,
+				4C53BD341CDB383000E1DE3F /* KBPersistanceMarcos.h */,
+				4C53BD351CDB43D300E1DE3F /* KBPersistance.h */,
+			);
+			path = KBPersistance;
+			sourceTree = "<group>";
+		};
+		4C53BD151CDAEC2D00E1DE3F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD161CDAEC5F00E1DE3F /* KBDataBase.h */,
+				4C53BD171CDAEC5F00E1DE3F /* KBDataBase.m */,
+				4C53BD1A1CDB13A700E1DE3F /* KBDatabasePool.h */,
+				4C53BD1B1CDB13A700E1DE3F /* KBDatabasePool.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		4C53BD1D1CDB21A300E1DE3F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD1E1CDB21A300E1DE3F /* CURD */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		4C53BD1E1CDB21A300E1DE3F /* CURD */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD1F1CDB21D400E1DE3F /* TestInsertData.h */,
+				4C53BD201CDB21D400E1DE3F /* TestInsertData.m */,
+			);
+			path = CURD;
+			sourceTree = "<group>";
+		};
+		4C53BD221CDB221D00E1DE3F /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD3A1CDB4EFB00E1DE3F /* Insert */,
+				4C53BD231CDB22A200E1DE3F /* KBPersistanceTable.h */,
+				4C53BD241CDB22A200E1DE3F /* KBPersistanceTable.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		4C53BD261CDB24D300E1DE3F /* QueryCommand */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD3E1CDB525A00E1DE3F /* DataManipulations */,
+				4C53BD2A1CDB356800E1DE3F /* SchemaManipulations */,
+				4C53BD271CDB250900E1DE3F /* KBQueryCommand.h */,
+				4C53BD281CDB250900E1DE3F /* KBQueryCommand.m */,
+			);
+			path = QueryCommand;
+			sourceTree = "<group>";
+		};
+		4C53BD2A1CDB356800E1DE3F /* SchemaManipulations */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD2B1CDB358B00E1DE3F /* KBQueryCommand+SchemaManipulations.h */,
+				4C53BD2C1CDB358B00E1DE3F /* KBQueryCommand+SchemaManipulations.m */,
+			);
+			path = SchemaManipulations;
+			sourceTree = "<group>";
+		};
+		4C53BD2E1CDB372D00E1DE3F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD2F1CDB372D00E1DE3F /* NSSting */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4C53BD2F1CDB372D00E1DE3F /* NSSting */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD301CDB373900E1DE3F /* SQL */,
+			);
+			path = NSSting;
+			sourceTree = "<group>";
+		};
+		4C53BD301CDB373900E1DE3F /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD311CDB375100E1DE3F /* NSString+SQL.h */,
+				4C53BD321CDB375100E1DE3F /* NSString+SQL.m */,
+			);
+			name = SQL;
+			sourceTree = "<group>";
+		};
+		4C53BD361CDB495200E1DE3F /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD371CDB499600E1DE3F /* KBPersistanceRecord.h */,
+				4C53BD381CDB499600E1DE3F /* KBPersistanceRecord.m */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		4C53BD3A1CDB4EFB00E1DE3F /* Insert */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD3B1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.h */,
+				4C53BD3C1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m */,
+			);
+			name = Insert;
+			sourceTree = "<group>";
+		};
+		4C53BD3E1CDB525A00E1DE3F /* DataManipulations */ = {
+			isa = PBXGroup;
+			children = (
+				4C53BD3F1CDB528200E1DE3F /* KBQueryCommand+DataManipulations.h */,
+				4C53BD401CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m */,
+			);
+			name = DataManipulations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +434,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C53BD211CDB21D400E1DE3F /* TestInsertData.m in Sources */,
+				4C53BD1C1CDB13A700E1DE3F /* KBDatabasePool.m in Sources */,
+				4C53BD331CDB375100E1DE3F /* NSString+SQL.m in Sources */,
 				4C53BCE71CDAE3E200E1DE3F /* ViewController.m in Sources */,
+				4C53BD181CDAEC5F00E1DE3F /* KBDataBase.m in Sources */,
 				4C53BCE41CDAE3E200E1DE3F /* AppDelegate.m in Sources */,
+				4C53BD391CDB499600E1DE3F /* KBPersistanceRecord.m in Sources */,
+				4C53BD411CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m in Sources */,
+				4C53BD291CDB250900E1DE3F /* KBQueryCommand.m in Sources */,
+				4C53BD3D1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m in Sources */,
+				4C53BD251CDB22A200E1DE3F /* KBPersistanceTable.m in Sources */,
 				4C53BCE11CDAE3E200E1DE3F /* main.m in Sources */,
+				4C53BD2D1CDB358B00E1DE3F /* KBQueryCommand+SchemaManipulations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KBPersistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.3glasses.KBPersistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KBPersistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.3glasses.KBPersistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +672,7 @@
 				4C53BD0B1CDAE3E200E1DE3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C53BD0C1CDAE3E200E1DE3F /* Build configuration list for PBXNativeTarget "KBPersistanceTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +681,7 @@
 				4C53BD0E1CDAE3E200E1DE3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C53BD0F1CDAE3E200E1DE3F /* Build configuration list for PBXNativeTarget "KBPersistanceUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +690,7 @@
 				4C53BD111CDAE3E200E1DE3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
