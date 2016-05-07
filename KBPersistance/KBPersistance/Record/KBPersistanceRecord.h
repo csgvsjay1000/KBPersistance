@@ -15,8 +15,6 @@
 @required
 - (NSDictionary *)dictionaryRepresentationWithTable:(KBPersistanceTable <KBPersistanceTableProtocol> *)table;
 
-- (BOOL)setPersistanceValue:(id)value forKey:(NSString *)key;
-
 @end
 
 @interface KBPersistanceRecord : NSObject<KBPersistanceRecordProtocol>

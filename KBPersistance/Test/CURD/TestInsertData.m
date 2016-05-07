@@ -40,6 +40,13 @@
 
 @implementation TestRecord
 
-
+- (NSDictionary *)dictionaryRepresentationWithTable:(KBPersistanceTable <KBPersistanceTableProtocol> *)table{
+    return @{
+             @"primaryKey":self.primaryKey?self.primaryKey:[NSNull null],
+             @"name":self.name?self.name:[NSNull null],
+             @"age":self.age?self.age:[NSNull null],
+             @"tomas":self.tomas?self.tomas:[NSNull null]
+             };
+}
 
 @end

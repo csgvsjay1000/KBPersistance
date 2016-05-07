@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C03B34C1CDDF39100A72EDE /* TestDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03B34B1CDDF39100A72EDE /* TestDataCenter.m */; };
+		4C03B3501CDDF93C00A72EDE /* KBPersistanceMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03B34F1CDDF93C00A72EDE /* KBPersistanceMigrator.m */; };
+		4C03B3531CDDFA9900A72EDE /* KBVersionRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03B3521CDDFA9900A72EDE /* KBVersionRecord.m */; };
 		4C53BCE11CDAE3E200E1DE3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BCE01CDAE3E200E1DE3F /* main.m */; };
 		4C53BCE41CDAE3E200E1DE3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BCE31CDAE3E200E1DE3F /* AppDelegate.m */; };
 		4C53BCE71CDAE3E200E1DE3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BCE61CDAE3E200E1DE3F /* ViewController.m */; };
@@ -47,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C03B34A1CDDF39100A72EDE /* TestDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataCenter.h; sourceTree = "<group>"; };
+		4C03B34B1CDDF39100A72EDE /* TestDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataCenter.m; sourceTree = "<group>"; };
+		4C03B34E1CDDF93C00A72EDE /* KBPersistanceMigrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBPersistanceMigrator.h; sourceTree = "<group>"; };
+		4C03B34F1CDDF93C00A72EDE /* KBPersistanceMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPersistanceMigrator.m; sourceTree = "<group>"; };
+		4C03B3511CDDFA9900A72EDE /* KBVersionRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBVersionRecord.h; sourceTree = "<group>"; };
+		4C03B3521CDDFA9900A72EDE /* KBVersionRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBVersionRecord.m; sourceTree = "<group>"; };
 		4C53BCDC1CDAE3E200E1DE3F /* KBPersistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBPersistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C53BCE01CDAE3E200E1DE3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C53BCE21CDAE3E200E1DE3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +126,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C03B34D1CDDF90F00A72EDE /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				4C03B34E1CDDF93C00A72EDE /* KBPersistanceMigrator.h */,
+				4C03B34F1CDDF93C00A72EDE /* KBPersistanceMigrator.m */,
+				4C03B3511CDDFA9900A72EDE /* KBVersionRecord.h */,
+				4C03B3521CDDFA9900A72EDE /* KBVersionRecord.m */,
+			);
+			path = Migration;
+			sourceTree = "<group>";
+		};
 		4C53BCD31CDAE3E200E1DE3F = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +167,8 @@
 				4C53BCE31CDAE3E200E1DE3F /* AppDelegate.m */,
 				4C53BCE51CDAE3E200E1DE3F /* ViewController.h */,
 				4C53BCE61CDAE3E200E1DE3F /* ViewController.m */,
+				4C03B34A1CDDF39100A72EDE /* TestDataCenter.h */,
+				4C03B34B1CDDF39100A72EDE /* TestDataCenter.m */,
 				4C53BCE81CDAE3E200E1DE3F /* Main.storyboard */,
 				4C53BCEB1CDAE3E200E1DE3F /* Assets.xcassets */,
 				4C53BCED1CDAE3E200E1DE3F /* LaunchScreen.storyboard */,
@@ -185,6 +207,7 @@
 		4C53BD141CDAEC2D00E1DE3F /* KBPersistance */ = {
 			isa = PBXGroup;
 			children = (
+				4C03B34D1CDDF90F00A72EDE /* Migration */,
 				4C53BD361CDB495200E1DE3F /* Record */,
 				4C53BD2E1CDB372D00E1DE3F /* Categories */,
 				4C53BD261CDB24D300E1DE3F /* QueryCommand */,
@@ -452,10 +475,13 @@
 				4C53BD331CDB375100E1DE3F /* NSString+SQL.m in Sources */,
 				4C7986E01CDC49E700298BB3 /* KBQueryCommand+Status.m in Sources */,
 				4C53BCE71CDAE3E200E1DE3F /* ViewController.m in Sources */,
+				4C03B3501CDDF93C00A72EDE /* KBPersistanceMigrator.m in Sources */,
 				4C53BD181CDAEC5F00E1DE3F /* KBDataBase.m in Sources */,
+				4C03B3531CDDFA9900A72EDE /* KBVersionRecord.m in Sources */,
 				4C53BCE41CDAE3E200E1DE3F /* AppDelegate.m in Sources */,
 				4C53BD391CDB499600E1DE3F /* KBPersistanceRecord.m in Sources */,
 				4C53BD411CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m in Sources */,
+				4C03B34C1CDDF39100A72EDE /* TestDataCenter.m in Sources */,
 				4C53BD291CDB250900E1DE3F /* KBQueryCommand.m in Sources */,
 				4C53BD3D1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m in Sources */,
 				4C53BD251CDB22A200E1DE3F /* KBPersistanceTable.m in Sources */,

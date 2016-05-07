@@ -21,10 +21,7 @@
             KBQueryCommand *queryCommand = [[KBQueryCommand alloc] initWithDatabaseName:self.child.databaseName];
             if ([[queryCommand insertTable:self.child.tableName withDataList:@[[record dictionaryRepresentationWithTable:self.child]]] executeWithError:error]) {
                 if ([[queryCommand rowsChanged] integerValue]>0) {
-                    if (![record setPersistanceValue:[queryCommand lastInsertRowId] forKey:[self.child primaryKeyName]]) {
-                        isSuccessed = NO;
-                        *error = [NSError errorWithDomain:KeyKBdbErrorDomain code:KBdbErrorCodeFailedToSetKeyForValue userInfo:@{NSLocalizedDescriptionKey:[NSString stringWithFormat:@"failed to set value[%@] with key[%@] in record[%@]",self.child.primaryKeyName,[queryCommand lastInsertRowId],record]}];
-                    }
+                    return isSuccessed;
                 }else{
                     isSuccessed = NO;
                     if (error) {

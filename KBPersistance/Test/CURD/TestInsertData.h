@@ -17,7 +17,7 @@
 
 @end
 
-@interface TestRecord : KBPersistanceRecord<KBPersistanceRecordProtocol>
+@interface TestRecord : NSObject<KBPersistanceRecordProtocol>
 
 @property (nonatomic, strong) NSNumber *primaryKey;
 @property (nonatomic, strong) NSNumber *age;
