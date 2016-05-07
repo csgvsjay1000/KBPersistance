@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+@class KBPersistanceTable;
+@protocol KBPersistanceTableProtocol;
 
 @protocol KBPersistanceRecordProtocol <NSObject>
 
 @required
+- (NSDictionary *)dictionaryRepresentationWithTable:(KBPersistanceTable <KBPersistanceTableProtocol> *)table;
 
+- (BOOL)setPersistanceValue:(id)value forKey:(NSString *)key;
 
 @end
 

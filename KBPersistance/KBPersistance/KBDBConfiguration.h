@@ -15,6 +15,10 @@ typedef NS_ENUM(NSUInteger,KBdbErrorCode) {
     KBdbErrorCodeOpenError,
     KBdbErrorCodeCreateError,
     KBdbErrorCodeQueryStringError,
+    KBdbErrorCodeFailedToSetKeyForValue,
+    KBdbErrorCodeRecordNotAvailableToInsert,
 };
+
+static NSString * const KBdbErrorUserinfoKeyErrorRecord = @"KBdbErrorUserinfoKeyErrorRecord";
 
 #endif /* KBDBConfiguration_h */

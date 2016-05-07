@@ -16,6 +16,7 @@
 #import "KBDatabasePool.h"
 
 #import "KBPersistanceTable.h"
+#import "KBPersistanceTable+Insert.h"
 #import "KBPersistanceRecord.h"
 
 #import "KBQueryCommand.h"

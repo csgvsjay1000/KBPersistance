@@ -26,6 +26,7 @@
 		4C53BD391CDB499600E1DE3F /* KBPersistanceRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD381CDB499600E1DE3F /* KBPersistanceRecord.m */; };
 		4C53BD3D1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD3C1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m */; };
 		4C53BD411CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BD401CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m */; };
+		4C7986E01CDC49E700298BB3 /* KBQueryCommand+Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7986DF1CDC49E700298BB3 /* KBQueryCommand+Status.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		4C53BD3C1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBPersistanceTable+Insert.m"; sourceTree = "<group>"; };
 		4C53BD3F1CDB528200E1DE3F /* KBQueryCommand+DataManipulations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KBQueryCommand+DataManipulations.h"; sourceTree = "<group>"; };
 		4C53BD401CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBQueryCommand+DataManipulations.m"; sourceTree = "<group>"; };
+		4C7986DE1CDC49E700298BB3 /* KBQueryCommand+Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KBQueryCommand+Status.h"; sourceTree = "<group>"; };
+		4C7986DF1CDC49E700298BB3 /* KBQueryCommand+Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBQueryCommand+Status.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +238,7 @@
 		4C53BD261CDB24D300E1DE3F /* QueryCommand */ = {
 			isa = PBXGroup;
 			children = (
+				4C7986DD1CDC49A100298BB3 /* StatusMethods */,
 				4C53BD3E1CDB525A00E1DE3F /* DataManipulations */,
 				4C53BD2A1CDB356800E1DE3F /* SchemaManipulations */,
 				4C53BD271CDB250900E1DE3F /* KBQueryCommand.h */,
@@ -302,6 +306,15 @@
 				4C53BD401CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m */,
 			);
 			name = DataManipulations;
+			sourceTree = "<group>";
+		};
+		4C7986DD1CDC49A100298BB3 /* StatusMethods */ = {
+			isa = PBXGroup;
+			children = (
+				4C7986DE1CDC49E700298BB3 /* KBQueryCommand+Status.h */,
+				4C7986DF1CDC49E700298BB3 /* KBQueryCommand+Status.m */,
+			);
+			name = StatusMethods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +450,7 @@
 				4C53BD211CDB21D400E1DE3F /* TestInsertData.m in Sources */,
 				4C53BD1C1CDB13A700E1DE3F /* KBDatabasePool.m in Sources */,
 				4C53BD331CDB375100E1DE3F /* NSString+SQL.m in Sources */,
+				4C7986E01CDC49E700298BB3 /* KBQueryCommand+Status.m in Sources */,
 				4C53BCE71CDAE3E200E1DE3F /* ViewController.m in Sources */,
 				4C53BD181CDAEC5F00E1DE3F /* KBDataBase.m in Sources */,
 				4C53BCE41CDAE3E200E1DE3F /* AppDelegate.m in Sources */,

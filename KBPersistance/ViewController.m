@@ -20,9 +20,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    NSError *error = nil;
+    
     TestTable *table = [[TestTable alloc] init];
     TestRecord *record = [[TestRecord alloc] init];
-//    table 
+    record.age = @(1);
+    record.name = @"1";
+    record.tomas = @"1";
+    [table insertRecord:record error:&error];
+    if ([record.primaryKey integerValue] > 0) {
+        NSLog(@"1001 success");
+    } else {
+        NSException *exception = [[NSException alloc] init];
+        @throw exception;
+    }
     
 }
 

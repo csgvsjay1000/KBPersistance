@@ -24,4 +24,11 @@
     return safeSQL;
 }
 
+- (NSString *)safeSQLDecode
+{
+    NSString *safeSQL = [self copy];
+    safeSQL = [safeSQL stringByReplacingOccurrencesOfString:@"\\'" withString:@"'"];
+    return safeSQL;
+}
+
 @end

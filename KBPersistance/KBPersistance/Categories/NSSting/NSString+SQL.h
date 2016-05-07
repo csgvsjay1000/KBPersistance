@@ -26,4 +26,14 @@
  */
 - (NSString *)safeSQLEncode;
 
+/**
+ *  decode the string which is encoded for SQL.
+ *
+ *  @return return the decoded string.
+ *
+ *  @see safeSQLDecode
+ *  @see safeSQLMetaString
+ */
+- (NSString *)safeSQLDecode;
+
 @end
