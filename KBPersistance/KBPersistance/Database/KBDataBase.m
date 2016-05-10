@@ -8,6 +8,7 @@
 
 #import "KBDataBase.h"
 #import "KBDBConfiguration.h"
+#import "KBPersistanceMigrator.h"
 
 @interface KBDataBase ()
 
@@ -16,6 +17,8 @@
 @property(nonatomic,copy)NSString *databaseName;
 
 @property(nonatomic,copy)NSString *databaseFilePath;
+
+@property(nonatomic,strong)KBPersistanceMigrator *migrator;  //数据库迁移,版本
 
 @end
 
@@ -44,6 +47,13 @@
             [self closeDatabase];
             return nil;
         }
+        if (isFileExists == NO) {
+            [self.migrator createVersionTableWithDatabase:self];
+        }
+        if ([self.migrator shouldMigrate:self]) {
+            [self.migrator performMigrate:self];
+        }
+        
         NSLog(@"%@",self.databaseFilePath);
     }
     return self;
@@ -58,6 +68,22 @@
     sqlite3_close_v2(self.database);
     self.database = 0x00;
     self.databaseFilePath = nil;
+}
+
+#pragma mark - setters and getters
+-(KBPersistanceMigrator *)migrator{
+    if (_migrator == nil) {
+        NSString *persistanceConfigurationPlistPath = [[NSBundle mainBundle] pathForResource:@"CTPersistanceConfiguration" ofType:@"plist"];
+        NSDictionary *configurationDictionary = [[NSDictionary alloc] initWithContentsOfFile:persistanceConfigurationPlistPath];
+        __block Class migratorClass;
+        [configurationDictionary enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull databaseName, NSString * _Nonnull migartorClassName, BOOL * _Nonnull stop) {
+            if ([self.databaseName isEqualToString:databaseName]) {
+                migratorClass = NSClassFromString(migartorClassName);
+            }
+        }];
+        _migrator = [[migratorClass alloc] init];
+    }
+    return _migrator;
 }
 
 @end

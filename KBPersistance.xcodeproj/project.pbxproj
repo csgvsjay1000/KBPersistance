@@ -10,6 +10,10 @@
 		4C03B34C1CDDF39100A72EDE /* TestDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03B34B1CDDF39100A72EDE /* TestDataCenter.m */; };
 		4C03B3501CDDF93C00A72EDE /* KBPersistanceMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03B34F1CDDF93C00A72EDE /* KBPersistanceMigrator.m */; };
 		4C03B3531CDDFA9900A72EDE /* KBVersionRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C03B3521CDDFA9900A72EDE /* KBVersionRecord.m */; };
+		4C0EFBC21CE1AC0C00AD1F28 /* KBQueryCommand+ReadMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0EFBC11CE1AC0C00AD1F28 /* KBQueryCommand+ReadMethods.m */; };
+		4C0EFBC41CE1B63400AD1F28 /* CTPersistanceConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C0EFBC31CE1B63400AD1F28 /* CTPersistanceConfiguration.plist */; };
+		4C0EFBCA1CE1BF8500AD1F28 /* MigrationStep1_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0EFBC91CE1BF8500AD1F28 /* MigrationStep1_0.m */; };
+		4C0EFBCD1CE1BFEE00AD1F28 /* TestMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0EFBCC1CE1BFEE00AD1F28 /* TestMigrator.m */; };
 		4C53BCE11CDAE3E200E1DE3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BCE01CDAE3E200E1DE3F /* main.m */; };
 		4C53BCE41CDAE3E200E1DE3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BCE31CDAE3E200E1DE3F /* AppDelegate.m */; };
 		4C53BCE71CDAE3E200E1DE3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BCE61CDAE3E200E1DE3F /* ViewController.m */; };
@@ -56,6 +60,13 @@
 		4C03B34F1CDDF93C00A72EDE /* KBPersistanceMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPersistanceMigrator.m; sourceTree = "<group>"; };
 		4C03B3511CDDFA9900A72EDE /* KBVersionRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBVersionRecord.h; sourceTree = "<group>"; };
 		4C03B3521CDDFA9900A72EDE /* KBVersionRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBVersionRecord.m; sourceTree = "<group>"; };
+		4C0EFBC01CE1AC0C00AD1F28 /* KBQueryCommand+ReadMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KBQueryCommand+ReadMethods.h"; sourceTree = "<group>"; };
+		4C0EFBC11CE1AC0C00AD1F28 /* KBQueryCommand+ReadMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KBQueryCommand+ReadMethods.m"; sourceTree = "<group>"; };
+		4C0EFBC31CE1B63400AD1F28 /* CTPersistanceConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CTPersistanceConfiguration.plist; sourceTree = "<group>"; };
+		4C0EFBC81CE1BF8500AD1F28 /* MigrationStep1_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MigrationStep1_0.h; sourceTree = "<group>"; };
+		4C0EFBC91CE1BF8500AD1F28 /* MigrationStep1_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MigrationStep1_0.m; sourceTree = "<group>"; };
+		4C0EFBCB1CE1BFEE00AD1F28 /* TestMigrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMigrator.h; sourceTree = "<group>"; };
+		4C0EFBCC1CE1BFEE00AD1F28 /* TestMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMigrator.m; sourceTree = "<group>"; };
 		4C53BCDC1CDAE3E200E1DE3F /* KBPersistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBPersistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C53BCE01CDAE3E200E1DE3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C53BCE21CDAE3E200E1DE3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +148,42 @@
 			path = Migration;
 			sourceTree = "<group>";
 		};
+		4C0EFBBF1CE1ABD000AD1F28 /* ReadingMethods */ = {
+			isa = PBXGroup;
+			children = (
+				4C0EFBC01CE1AC0C00AD1F28 /* KBQueryCommand+ReadMethods.h */,
+				4C0EFBC11CE1AC0C00AD1F28 /* KBQueryCommand+ReadMethods.m */,
+			);
+			name = ReadingMethods;
+			sourceTree = "<group>";
+		};
+		4C0EFBC51CE1BF1C00AD1F28 /* Migrate */ = {
+			isa = PBXGroup;
+			children = (
+				4C0EFBC61CE1BF2B00AD1F28 /* MigrateSteps */,
+				4C0EFBCB1CE1BFEE00AD1F28 /* TestMigrator.h */,
+				4C0EFBCC1CE1BFEE00AD1F28 /* TestMigrator.m */,
+			);
+			path = Migrate;
+			sourceTree = "<group>";
+		};
+		4C0EFBC61CE1BF2B00AD1F28 /* MigrateSteps */ = {
+			isa = PBXGroup;
+			children = (
+				4C0EFBC71CE1BF4B00AD1F28 /* 1_0 */,
+			);
+			name = MigrateSteps;
+			sourceTree = "<group>";
+		};
+		4C0EFBC71CE1BF4B00AD1F28 /* 1_0 */ = {
+			isa = PBXGroup;
+			children = (
+				4C0EFBC81CE1BF8500AD1F28 /* MigrationStep1_0.h */,
+				4C0EFBC91CE1BF8500AD1F28 /* MigrationStep1_0.m */,
+			);
+			name = 1_0;
+			sourceTree = "<group>";
+		};
 		4C53BCD31CDAE3E200E1DE3F = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +228,7 @@
 		4C53BCDF1CDAE3E200E1DE3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C0EFBC31CE1B63400AD1F28 /* CTPersistanceConfiguration.plist */,
 				4C53BCE01CDAE3E200E1DE3F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -234,6 +282,7 @@
 		4C53BD1D1CDB21A300E1DE3F /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				4C0EFBC51CE1BF1C00AD1F28 /* Migrate */,
 				4C53BD1E1CDB21A300E1DE3F /* CURD */,
 			);
 			path = Test;
@@ -261,6 +310,7 @@
 		4C53BD261CDB24D300E1DE3F /* QueryCommand */ = {
 			isa = PBXGroup;
 			children = (
+				4C0EFBBF1CE1ABD000AD1F28 /* ReadingMethods */,
 				4C7986DD1CDC49A100298BB3 /* StatusMethods */,
 				4C53BD3E1CDB525A00E1DE3F /* DataManipulations */,
 				4C53BD2A1CDB356800E1DE3F /* SchemaManipulations */,
@@ -443,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0EFBC41CE1B63400AD1F28 /* CTPersistanceConfiguration.plist in Resources */,
 				4C53BCEF1CDAE3E200E1DE3F /* LaunchScreen.storyboard in Resources */,
 				4C53BCEC1CDAE3E200E1DE3F /* Assets.xcassets in Resources */,
 				4C53BCEA1CDAE3E200E1DE3F /* Main.storyboard in Resources */,
@@ -474,14 +525,17 @@
 				4C53BD1C1CDB13A700E1DE3F /* KBDatabasePool.m in Sources */,
 				4C53BD331CDB375100E1DE3F /* NSString+SQL.m in Sources */,
 				4C7986E01CDC49E700298BB3 /* KBQueryCommand+Status.m in Sources */,
+				4C0EFBC21CE1AC0C00AD1F28 /* KBQueryCommand+ReadMethods.m in Sources */,
 				4C53BCE71CDAE3E200E1DE3F /* ViewController.m in Sources */,
 				4C03B3501CDDF93C00A72EDE /* KBPersistanceMigrator.m in Sources */,
 				4C53BD181CDAEC5F00E1DE3F /* KBDataBase.m in Sources */,
 				4C03B3531CDDFA9900A72EDE /* KBVersionRecord.m in Sources */,
 				4C53BCE41CDAE3E200E1DE3F /* AppDelegate.m in Sources */,
+				4C0EFBCA1CE1BF8500AD1F28 /* MigrationStep1_0.m in Sources */,
 				4C53BD391CDB499600E1DE3F /* KBPersistanceRecord.m in Sources */,
 				4C53BD411CDB528200E1DE3F /* KBQueryCommand+DataManipulations.m in Sources */,
 				4C03B34C1CDDF39100A72EDE /* TestDataCenter.m in Sources */,
+				4C0EFBCD1CE1BFEE00AD1F28 /* TestMigrator.m in Sources */,
 				4C53BD291CDB250900E1DE3F /* KBQueryCommand.m in Sources */,
 				4C53BD3D1CDB4F2400E1DE3F /* KBPersistanceTable+Insert.m in Sources */,
 				4C53BD251CDB22A200E1DE3F /* KBPersistanceTable.m in Sources */,

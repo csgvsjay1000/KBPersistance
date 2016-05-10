@@ -12,4 +12,6 @@
 
 -(KBQueryCommand *)createTable:(NSString *)tableName columnInfo:(NSDictionary *)columnInfo;
 
+-(KBQueryCommand *)addColumn:(NSString *)columnName columnInfo:(NSString *)columnInfo tableName:(NSString *)tableName;
+
 @end

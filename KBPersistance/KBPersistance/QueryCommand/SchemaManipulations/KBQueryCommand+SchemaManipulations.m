@@ -35,4 +35,18 @@
     return self;
 }
 
+-(KBQueryCommand *)addColumn:(NSString *)columnName columnInfo:(NSString *)columnInfo tableName:(NSString *)tableName{
+    [self resetQueryCommand];
+    NSString *safeColumnName = [columnName safeSQLMetaString];
+    NSString *safeColumnInfo = [columnInfo safeSQLMetaString];
+    NSString *safeTableName = [tableName safeSQLMetaString];
+    
+    if (KBPersistance_isEmptyString(safeTableName) || KBPersistance_isEmptyString(safeColumnInfo) || KBPersistance_isEmptyString(safeColumnName)) {
+        return self;
+    }
+    [self.sqlString appendFormat:@"ALTER TABLE '%@' ADD COLUMN '%@' %@; ",safeTableName,safeColumnName,safeColumnInfo];
+    
+    return self;
+}
+
 @end

@@ -24,9 +24,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     TestRecord *record = [[TestRecord alloc] init];
-    record.age = @(1);
-    record.name = @"1";
+    record.age = @(18);
+    record.name = @"yyy";
     record.tomas = @"1";
+    record.migration1_0 = @"migration1_0";
    
     if ([self.dataCenter saveRecord:record] > 0) {
         NSLog(@"添加成功");

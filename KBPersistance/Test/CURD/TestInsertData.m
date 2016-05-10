@@ -24,12 +24,18 @@
 - (NSString *)tableName{
     return @"test";
 }
+
++ (NSString *)tableName{
+    return @"test";
+}
+
 - (NSDictionary *)columnInfo{
     return @{
              @"primaryKey":@"INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL",
              @"name":@"TEXT",
              @"age":@"INTEGER",
-             @"tomas":@"TEXT NOT NULL"
+             @"tomas":@"TEXT NOT NULL",
+             @"migration1_0":@"TEXT"
              };
 }
 - (NSString *)primaryKeyName{
@@ -45,7 +51,9 @@
              @"primaryKey":self.primaryKey?self.primaryKey:[NSNull null],
              @"name":self.name?self.name:[NSNull null],
              @"age":self.age?self.age:[NSNull null],
-             @"tomas":self.tomas?self.tomas:[NSNull null]
+             @"tomas":self.tomas?self.tomas:[NSNull null],
+             @"migration1_0":self.migration1_0?self.migration1_0:[NSNull null]
+
              };
 }
 

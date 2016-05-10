@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "KBPersistanceTable.h"
+#import "KBPersistanceTable+Insert.h"
+#import "KBDataBase.h"
 
 @interface KBVersionRecord : NSObject<KBPersistanceRecordProtocol>
 
@@ -18,5 +20,13 @@
 @end
 
 @interface KBVersionTable : KBPersistanceTable<KBPersistanceTableProtocol>
+
+- (instancetype)initWithDatabase:(KBDataBase *)database;
+
++(NSString *)tableName;
+
++ (NSString *)primaryKeyName;
+
++ (NSDictionary *)columnInfo;
 
 @end

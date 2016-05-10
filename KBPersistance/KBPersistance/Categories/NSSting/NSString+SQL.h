@@ -36,4 +36,22 @@
  */
 - (NSString *)safeSQLDecode;
 
+/**
+ *  put params in string. The key in string should start with colon, and the key in Params don't. this method will add colon before matching.
+ *
+ *  Example:
+ *
+ *  NSString *foo = @"hello :bar"; // the key in string must start wich colon
+ *  NSDictionary *params = @{
+ *      @"bar":@"world" // don't put colon in key
+ *  };
+ *
+ *  will generate @"hello world"
+ *
+ *  @param params params in string to replace
+ *
+ *  @return return a string.
+ */
+- (NSString *)stringWithSQLParams:(NSDictionary *)params;
+
 @end
